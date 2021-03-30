@@ -19,6 +19,11 @@
 .header {
   grid-area: header;
   background-color: yellow;
+  display: grid;
+  grid-template:
+    "heading searchbar list " auto /
+    auto auto auto;
+  align-items: center;
 }
 
 .left-menu {
@@ -34,4 +39,19 @@
 .right-menu {
   grid-area: right-menu;
   background-color: #266650;
+}
+
+.header-items {
+  display: inline;
+}
+
+.heading,
+.searchbar,
+.list,
+.header-element,
+.searchbar-element,
+.list-element {
+  background-color: yellow;
+  list-style: none;
+  display: inline;
 }
